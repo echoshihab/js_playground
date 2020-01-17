@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            label {
+                margin-left:2px;
+            }
+        </style>
+
+    </head>
+    <body>
+        Without Debounce:
+        <input type="text" onkeyup="callAPI()"/>
+        <label>API call Count:</label> <span id='1'></span>
+        <br><br>
+        With Debounce:
+        <input type="text" onkeyup="callDebounceAPI()"/>
+        <label>API call Count:</label><span id='2'></span>
+
+        <script src="index.js"></script>
+    </body>
+</html>
